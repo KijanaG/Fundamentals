@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Intermediate Foundation & Recursive Fill</title>
+        <link rel="stylesheet" href="style_properties.css">
+    </head>
+    <body>
+        <script>   
+        /* //Sigma
+            function sigma(x){
+                var sum=0;
+                for(var i=x;i>0;i--){
+                    sum+=i;
+                }
+                return sum;
+            }
+            console.log(sigma(2029)); 
+
+            //Factorial
+            function factorial(y){
+                var product = 1;
+                for(var i=1;i<=y;i++){
+                    product*=i;
+                }
+                return product;
+            }
+            console.log(factorial(40));
+            
+            //Fibonacci
+            function fibonacci(){
+                var fibonacci = [0,1];
+                for(var i=2;i<20;i++){
+                    fibonacci.push(fibonacci[i-1]+fibonacci[i-2]);
+                }
+                console.log(fibonacci);
+            }
+            fibonacci();
+
+            //Array Second To Last
+            function secondToLast(arr){
+                if(arr.length<2){
+                    return null;
+                }
+                else{
+                    return arr[arr.length-2];
+                }
+            }
+            console.log(secondToLast([4])); 
+
+            //Array Nth To Last
+            function nthToLast(arr,n){
+
+                if(arr.length< n){
+                    return null;
+                }
+                else{
+                    return arr[arr.length-n];
+                }
+            }
+            console.log(nthToLast([18,4,4,5,5,6],6)); 
+
+            //Array 2nd Largest
+            function secondLargest(arr){
+                var max = arr[0];
+                for(var i=1;i<arr.length;i++){
+                    if(arr[i]>max){
+                        max = arr[i];
+                        max_index=i;
+                    }
+                }
+                arr[max_index] = 0;
+                max = arr[0];
+                for(var i=1;i<arr.length;i++){
+                    if(arr[i]>max){
+                        max = arr[i];
+                    }
+                }
+                console.log("2nd Largest #: ", max);
+            }
+            secondLargest([1,15,3,4,12,6,7,8,9]); 
+
+            //Double Trouble
+            function doubleTrouble(arr){
+                var newarr = [];
+                console.log(arr);
+                for(var i=0;i<arr.length;i++){
+                    newarr.push(arr[i]);
+                    newarr.push(arr[i]);
+                }
+                arr = newarr;
+                console.log(arr);
+            }
+            doubleTrouble([3,'Hello',false]); 
+
+            // PART 2 //
+            
+            function fib(n, myArray){
+                myArray.push(myArray[myArray.length-1]+myArray[myArray.length-2]);
+                if(myArray.length<=n){
+                    fib(n, myArray);
+                }
+                return myArray[n-1];
+            }
+            console.log(fib(1,[0,1]));
+
+            function fib(n){
+                if(n==0 || n==1){
+                    return n;
+                }
+                return fib(n-2)+fib(n-1);
+            }
+            console.log(fib(40)); */
+        </script>
+
+        <style>
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            body{
+                background-color:black;
+            }
+            .row div{
+                margin: 0px;
+                width:50px;
+                height:50px;
+                display:inline-block;
+            }
+            .white{
+                background-color:white;
+            }
+            .red{
+                background-color:red;
+            }
+            .yellow{
+                background-color:yellow;
+            }
+            .blue{
+                background-color:blue;
+            }
+            .green{
+                background-color:green;
+            }
+        </style>
+
+        <div id='container'></div>
+
+        <script type="text/javascript">      
+
+           //Recursive Fill
+
+		var world = [
+			[1,1,1,0,0,0,0,3,2,2],
+			[0,0,0,0,1,0,0,3,3,3],
+			[0,2,2,0,1,0,0,0,0,0],
+			[0,2,2,0,1,1,1,1,0,0],
+			[0,2,2,0,1,0,0,0,0,3],
+			[0,2,2,0,1,0,0,3,3,3],
+			[0,0,0,0,1,0,0,3,3,3]];
+
+		var mapping = {
+			0: 'white',
+			1: 'red',
+			2: 'yellow',
+			3: 'blue',
+			4: 'green'
+		}
+		function drawWorld()
+		{
+			var output = '';
+			for(var i=0; i<world.length; i++)
+			{
+				output += '<div class="row">';
+				for(var j=0; j<world[i].length; j++)
+				{
+					output += "<div class='"+mapping[world[i][j]]+"'></div>";
+				}
+				output += '</div>';
+			}
+			document.getElementById('container').innerHTML = output;
+			// console.log(output);
+		}
+		document.onclick = function(e)
+		{
+			var x = Math.floor(e.x/50);
+			var y = Math.floor(e.y/50);
+			// console.log('Coordinate Clicked', e.x, e.y);
+			// console.log('X, Y', x, y);
+			// console.log('Original Color', mapping[world[y][x]]);
+			// console.log('Replace color', world[y][x], ' with color 4 starting from x:', x, 'y:', y);
+			fill(x, y, world[y][x], 4);
+		}
+
+		function fill(x,y,original_color, color)
+		{          
+            if(y < 0 || y > 6 || x < 0 || x > 9){
+                return;
+            }
+            if(world[y][x] != original_color){
+                return;
+            }
+            world[y][x] = color;
+            
+            fill(x+1,y,original_color,color);
+            fill(x-1,y,original_color,color);
+            fill(x,y-1,original_color,color);
+            fill(x,y+1,original_color,color);
+
+            drawWorld();
+		}
+		drawWorld();
+        console.log(document.body);
+        var body = document.body;
+
+        </script>
+    </body>
+</html>

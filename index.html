@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Simply Responsive</title>
+        
+    </head>
+
+    <body>
+        <div class="header"></div>
+        <script>
+        function parens(string){
+            var par = [];
+            var isValid = false;
+            for(var i =0;i<string.length;i++){
+                if(string[i]=="(" || string[i]==")"){
+                    par.push(string[i]);
+                }
+            }
+            for(var i=0;i<par.length-1;i++){
+                if(par[0]==")"){
+                    return isValid;
+                }
+                else if((par[i]=="(" && par[i+1]==")" || par[i]==")" && par[i+1]=="(") && par[par.length-1] != "("){
+                    isValid = true;
+                }
+                else{
+                    return false;
+                }
+            }
+            return isValid;
+        }
+        console.log(parens("he()llo()"))
+        console.log(parens(")()()((()))"))
+        console.log(parens("True() my name is ()"))
+        console.log(parens("True() my name is ("))
+
+        </script>
+    </body>
+</html>

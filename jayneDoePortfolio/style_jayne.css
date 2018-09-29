@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 950px;
+    background-color: rgb(68, 26, 68);
+    margin: 0 auto;
+    height: 900px;
+    padding: 0px 8px 20px 20px;
+    background: radial-gradient(rgb(27, 26, 26), rgb(54, 4, 54), rgba(29, 28, 28, 0.966))
+}
+.title_header{
+    padding: 10px;
+    height: 40px;
+    background-color: rgba(212, 205, 196, 0.815);
+    margin: 0 auto;
+    width: 958px;
+}
+h1{
+    display: inline-block;
+    margin-left: 15px;
+    font-family: serif;
+}
+h3{
+    display: inline-block;
+    float: right;
+    margin: 10px 20px 15px 10px;
+}
+.jayne{
+    width: 44%;
+    height: 285px;
+    border: 4px solid grey;
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.about{
+    background-color: rgb(219, 206, 189);
+    height: 275px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-right: 18px;
+    padding-bottom: 15px;
+    float: right; 
+}
+.mini_head{
+    height: 30px;
+    padding: 0px 5px 12px 5px;
+    background-color: grey;
+    background: linear-gradient(rgb(197, 192, 192) 10%,rgba(44, 43, 43, 0.699) 100%);
+}
+.mini_head h3{
+    float: left;
+    color: aliceblue;
+}
+.about .substance{
+    padding: 10px;
+    font-size: 17px;
+    text-align: justify;
+}
+.continue{
+    margin-top: 7px;
+    text-decoration: underline;
+}
+.second{
+    position: relative;
+    float: none;
+    width: 31%;
+    padding: 0;
+    height: 362px;
+    display: inline-block;
+    margin-right: 19px;
+}
+.lamode{
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 150px;
+    top: -5px;
+}
+.second .substance{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 17px;
+    display: inline-block;
+    font-size: 16px;
+} 
+.fam{
+    font-size: 15px;
+}
+.third{
+    margin-right: 0px;
+}
+.fourth{
+    margin-top: 0px;
+    height: 200px;
+}
+.icon{
+    margin-top: 15px;
+    width:40px;
+    height: 40px;
+    display: inline-block;
+    margin: 4px 3px 3px 3px;
+    position: relative;
+}
+.fourth .substance {
+    position: relative;
+}
+.portal{
+    position: relative;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 14px;
+}
+.button{
+    position: relative;
+    background-color: rgb(7, 73, 7);
+    border-radius: 7px;
+    font-size: 14px;
+    color: aliceblue;
+    padding: 2px 4px;
+   text-decoration: none;
+   border: 1px solid black;
+   box-shadow: 3px 3px rgba(26, 25, 25, 0.411);
+}
+.footer{
+        padding: 5px 10px 15px 10px;
+        height: 40px;
+        margin: 0 auto;
+        width: 958px;
+        position: relative;
+        background: linear-gradient(rgb(240, 231, 231), rgba(128, 128, 128, 0.856))
+}
+.footer >p {
+    text-align: center;
+}
+.footer >ul{
+    text-align: center;
+    margin-top: 3px;
+}
+.footer .logo{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    right: 2px;
+}
+.footer >ul >li{
+    list-style-type: none;
+    display: inline-block;
+}
+.footer >ul >li >a{
+    color: black;
+}

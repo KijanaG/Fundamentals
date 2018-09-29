@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Functions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $('.b2').click(function(){
+                $('#first').hide();
+            });
+
+            $('.b1').click(function(){
+                $('#first').show("500");
+                });
+
+            $('#toggle').click(function(){
+                $('p').toggle();
+            });
+            
+            $('h3').click(function(){
+                $('#slide').slideToggle();
+            });
+            
+            $('.one').click(function(){
+                $('.one').slideUp();
+            });
+
+            $('.two').click(function(){
+                $('.one').slideDown();
+            });
+
+            $('.four').click(function(){
+                $('.four').slideUp();
+            });
+
+            $('.three').click(function(){
+                $('.four').slideDown();
+            });
+
+            $('#red').click(function(){
+                $('.red').fadeIn("slow", function(){
+                    $(this).css("color", "red");
+                })
+            })
+
+            $('#blue').click(function(){
+                $('.blue').fadeIn("slow", function(){
+                    $(this).css("color", "blue");
+                })
+            })
+
+            $('#green').hover(function(){
+                $('.green').fadeIn("slow", function(){
+                    $(this).css("color", "green");
+                })
+            }, function(){$('#green').mouseleave(function(){
+                $('.green').css('color','black')
+            });
+
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <h2>Show & Hide </h2>
+    <button class="b1">Show</button>
+    <button class="b2">Hide</button>
+    <p id="first"> This is my paragraph! </p>
+    <hr>
+    <button id="toggle">Toggle</button>
+    <p>Message in a bottle</p>
+    <hr>
+    <h3>Slide Up/Toggle/Down</h3>
+    <ul id="slide">
+        <li class="one">Going Up</li>
+        <li class="two">Going Down</li>
+        <li class="three">Going Down</li>
+        <li class="four">Going Up</li>
+    </ul>
+    <hr>
+    <h5>Hover and Fade </h5>
+    <button id="red" style="background: red;">Red</button>
+    <button id="green" style="background: green;">Green</button>
+    <button id="blue" style="background: blue;">Blue</button>
+    <h4> 
+        <span class="red"> WHASSUP </span>
+        <span class="blue"> WHASSUP </span>
+        <span class="green"> WHASSUP </span>
+    </h4>
+
+</body>  
+</html>

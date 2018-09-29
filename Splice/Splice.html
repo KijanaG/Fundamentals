@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Functions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('img').click(function () {
+                var temp = $(this).attr('src');
+              var newimg = $(this).attr('data-alt-src');
+                $(this).attr('src', newimg);
+                $(this).attr('data-alt-src', temp);
+            })
+
+        })
+    
+    </script>
+    <style>
+        img {
+            display: block;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="cat0.png" data-alt-src="ninja0.png">
+    <img src="cat1.png" data-alt-src="ninja1.png">
+    <img src="cat2.png" data-alt-src="ninja2.png">
+    <img src="cat3.png" data-alt-src="ninja3.png">
+    <img src="cat4.png" data-alt-src="ninja4.png">
+
+</body>
+
+</html>

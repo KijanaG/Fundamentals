@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Functions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var count = 0;
+            var num = '';
+            $('.lynx').click(function(){
+                $(this).hide();
+                count++;
+                document.getElementById("score").innerHTML = count;
+            })
+            
+            $('button').click(function(){
+                $('.lynx').show();
+                count = 0;
+                document.getElementById("score").innerHTML = count;
+            })
+        })
+
+    </script>
+    <style>
+        .box{
+            width: 320px;
+            height: 320px;
+            display: inline-block;
+            margin: 10px 20px 15px 20px;
+            background-color: rgba(255, 228, 196, 0.555);
+            vertical-align: top;
+        }
+        .lynx{
+            width: 300px;
+            height: 300px;
+            justify-content: center;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        button{
+            width: 250px;
+            height: 75px;
+            background: radial-gradient(purple, lightgreen, turquoise);
+            border-radius: 5px;
+            border: 3px dashed pink;
+            color: antiquewhite;
+            font-size: 200%;
+            margin: 10px 600px;
+        }
+        #score{
+            font-size: 80px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+     <div class="box"> <img src="lynx.jpg" class="lynx"alt="lynx"> </div>
+     <div class="box"> <img src="lynx.jpg" class="lynx"alt="lynx"> </div>
+     <div class="box"> <img src="lynx.jpg" class="lynx"alt="lynx"> </div>
+     <div class="box"> <img src="lynx.jpg" class="lynx"alt="lynx"> </div>
+     <div class="box"> <img src="lynx.jpg" class="lynx"alt="lynx"> </div>
+     <div class="box"> <img src="lynx.jpg" class="lynx"alt="lynx"> </div>
+     <div class="box"> <img src="lynx.jpg" class="lynx"alt="lynx"> </div>
+     <div class="box"> <img src="lynx.jpg" class="lynx"alt="lynx"> </div>
+     <br>
+     <button>Restore</button>
+     <div id="score"> </div>
+</body>  
+</html>

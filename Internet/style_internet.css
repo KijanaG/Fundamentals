@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    /* font-weight: bold; */
+    font-weight: 100;
+    /* border: 1px dotted red; */
+}
+.container {
+    width: 970px;
+    height: 786px;
+    background: linear-gradient(white 5%, rgba(202, 189, 174, 0.144) 15%, white 100%);
+    position: relative;
+    margin: 0 auto;
+}
+.globe{
+    width: 100px;
+    height: 100px;
+    margin: 0px 0px;
+    display: inline-block;
+    position: relative;
+    bottom: 81px;
+    right: 7px;
+}
+h1{
+    position: relative;
+    font-size: 50px;
+    vertical-align: top;
+    top: 16px;
+    left: 97px;
+}
+h1 >span{
+    color: rgb(53, 100, 153);
+}
+.header{
+    width: 970px;
+    height: 74px;
+    background: linear-gradient(rgba(60, 107, 157, 1) 39%,rgb(60,107,157) 30%, rgb(255,255,255,1) 35%, rgb(60, 107, 157, .8) 15%, rgb(60,107,157)) ;
+    /* background: linear-gradient(rgb(48, 112, 180)78%); */
+    margin-top: 15px;
+}
+h2{
+    display: inline-block;
+    position: relative;
+    right: 93px;
+    bottom:51px;
+    color: rgb(236, 234, 243);
+    font-size: 37px;
+}
+.side-bar{
+    height: 500px;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+}
+.side-bar #what{
+    position: relative;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 4px;
+    top: 27px;
+}
+.side-bar #what >span{
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+.side-bar #world{
+    position: relative;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 4px;
+    top: 39px;   
+}
+.side-bar #world >span{
+    color: rgb(55, 103, 155);
+    font-weight: bold;
+    font-size: 13px;
+}
+.first{
+    position: relative;
+    height: 31px;
+    width: 187px;
+    top: 54px;
+    left: 6px;
+    margin-bottom: 5px;
+    padding: 0px 0px 0px 0px;
+    background: linear-gradient(rgb(55,103,155), rgb(43, 82, 122));
+    color: white;
+    text-align: center;
+    border: 0px;
+    font-size: 15px;
+    box-shadow: 2px 2px rgba(82, 79, 81, 0.637);
+    border-radius: 6px;
+}
+.second{
+    background: linear-gradient(rgb(216, 156, 71), rgb(225, 123, 33));
+}
+hr{
+    position: relative;
+    top: 73px;
+    width: 198px;
+    height: 1px;
+    border: 0px;
+    background-color: rgb(95, 94, 94);
+}
+.back{
+    width: 196px;
+    height: 302px;
+    position: relative;
+    top: 95px;
+    box-shadow: 2px 2px rgba(82, 79, 81, 0.637);
+}
+h3{
+    color: white;
+    font-size: 23px;
+    position: relative;
+    text-align: center;
+    bottom: 196px;
+}
+.ninja{
+    height: 115px;
+    width: 78px;
+    position: relative;
+    top: -196px;
+    left: 57px;
+}
+.learn{
+    position: relative;
+    height: 31px;
+    width: 167px;
+    left: 13px;
+    margin-bottom: 5px;
+    padding: 0px 0px 0px 0px;
+    background: linear-gradient(rgba(96, 196, 220), rgb(90, 184, 207));
+    color: white;
+    border: 0px;
+    padding-left: 3px;
+    font-size: 15px;
+    box-shadow: 2px 2px rgba(82, 79, 81, 0.637);
+    border-radius: 6px;
+    bottom: 176px;
+}
+.fst{
+    position: relative;
+    bottom: 1px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.562);
+}
+.scnd{
+    position: relative;
+    bottom: 1px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.774);
+}
+.thrd{
+    position: relative;
+    bottom: 1px;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+}
+.main-content{
+    display: inline-block;
+    width: 724px;
+    height: 639px;
+    vertical-align: top;
+    float: right;
+}
+.icon{
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    margin-top: 7px;
+    margin-left: 1px;
+}
+h4{
+    font-size: 17px;
+    color: rgb(20, 20, 88);
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 8px;
+}
+.phone{
+    display: inline-block;
+    float: right;
+    height: 68px;
+    width: 230px;
+}
+.phone_icon{
+    justify-content: left;
+    width: 40px;
+    height: 40px;
+    margin-top: 11px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.phone >p{
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 16px;
+}
+.phone >h3{
+    color: rgb(91, 190, 218);
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 54px;
+    margin-top: 158px;
+}
+#p{
+    font-size: 11px;
+    margin-top: -193px;
+    margin-left: 73px;
+}
+hr.line{
+    width: 716px;
+    height: 1px;
+    color: black;
+    position: relative;
+    top: 4px;
+    vertical-align: top;
+}
+.main-content >h1{
+    font-size: 19px;
+    color: rgb(52,100,153);
+    position: relative;
+    display: block;
+    left: 2px;
+    top: 8px;
+}
+.comp{
+    color: black;
+    margin-top: 13px;
+    margin-left: 2px;
+}
+ul{
+    margin: 10px 20px 0px 45px;
+    font-size: 90%;
+}
+ul >li{
+    margin-top: 5px;
+}
+.server{
+    width:281px;
+    height: 102px;
+    margin: 14px 207px;
+}
+ol{
+    margin: -5px 20px 0px 45px;
+    font-size: 90%; 
+}
+ol >li{
+    margin-top: 5px;
+}
+.actual{
+    top: 0px;
+    bottom: 5px;
+}
+.main-content >h2{
+    font-size: 19px;
+    color: rgb(52,100,153);
+    position: relative;
+    display: block;
+    left: 2px;
+    top: -10px;
+}
+.foot{
+    width: 710px;
+    height: 120px;
+    border-top: 3px solid rgb(52, 133, 217);
+    border-left: 3px solid rgb(52, 133, 217);
+    border-right: 3px solid rgb(52, 133, 217);
+    margin: 15px 8px 0px 0px;
+}
+.html{
+    width: 109px;
+    height: 99px;
+    margin: 10px 12px;
+}
+.actual{
+    font-size: 19px;
+    color: rgb(52,100,153);
+    position: relative;
+    top: -113px;
+    right: 66px;
+}
+.foot >p{
+    font-size: 85%;
+    position: relative;
+    top:-110px;
+    right: -142px;
+}

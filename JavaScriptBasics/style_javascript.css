@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 970px;
+    background-color: rgb(27, 35, 155);
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+#header{
+    background-color:red;
+    border-radius: 12px;
+    height: 80px;
+    position: relative;
+    margin-bottom: 15px;
+}
+#message{
+    color: rgb(194, 193, 206);
+    padding: 20px 10px;
+}
+#side-bar{
+    width: 160px;
+    height: 180px;
+    border-radius: 12px;
+    background-color: rgb(61, 130, 161);
+    display: inline-block;
+    padding: 25px 5px 10px 25px;
+    vertical-align: top;
+}
+ul.first{
+    list-style-type: circle;
+    font-size: 85%;
+}
+
+#main{
+    list-style-type: none;
+}
+ul.first {
+    color: rgb(138, 200, 219);
+}
+ul.first .bullet{
+    margin-left: 20px;
+}
+ul.first .white{
+    list-style-type: disc;
+    color: white;
+}
+ul.first .non{
+    margin-left: 35px;
+}
+a{
+    color: aqua;
+}
+#main-content{
+    background-color: rgb(4, 4, 51);
+    border-radius: 12px;
+    width: 723px;
+    height: 450px;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+    padding: 15px;
+}
+.content{
+    margin-left: 5px;
+    color: rgb(194, 193, 206);
+    margin: 15px 0px 10px 5px;;
+}
+#paragraph{
+    font-size: 78%;
+    margin-left: 5px;
+    color: rgb(194, 193, 206);
+    margin-right: 15px;
+}
+.different{
+    color: purple;
+}
+ul.main{
+    margin: 15px;
+    margin-left: 20px;
+}
+#main-content ul{
+    color: rgb(194, 193, 206);
+    font-size: 77%;
+}
+#footer{
+    background-color: gray;
+    border-radius: 12px;
+    padding: 12px 10px 10px 10px;
+    height: 18px;
+    margin: 15px 2px 0px 2px;
+    font-size: 85%;
+    color: rgb(228, 224, 224);
+    font-weight: 200;
+}
